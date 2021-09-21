@@ -1,3 +1,7 @@
-body{
-  background: url(/img/MicrosoftTeams-image.png);
+body {
+  background-image: url(/img/MicrosoftTeams-image.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-y:scroll
+
 }
