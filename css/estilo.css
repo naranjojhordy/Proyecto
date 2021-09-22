@@ -6,7 +6,7 @@
 }
 
 body{
-  font-family: url(https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap);
+  font-family: url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
   background-color: whitesmoke ;
 }
 
@@ -20,11 +20,13 @@ body{
   border-bottom: none;
 }
 
-.logo {
-  color: white;
-  font-size: 85px;
-  padding: 0px;
-  font-weight: bold;
+img{
+width: 70px;
+height: 70px;
+position: relative;
+margin-left: 15px;
+
+
 }
 
 .menu-items {
@@ -40,11 +42,16 @@ body{
   text-decoration:none;
   font-size: 20px;
   display: block;
-  color: #52b7b5;
+  color: gray;
 }
 
 .menu-items li:hover, li.active {
   background-color: rgba(0,0,0,0.1);
   transform: 4s;
   border-radius: 5px;
+  color: blue;
+}
+
+.buscador {
+  margin-left: 150px;
 }
