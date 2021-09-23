@@ -31,6 +31,7 @@ margin-left: 15px;
 
 .menu-items {
   text-decoration: none;
+  margin-top: 11px;
   display: flex;
   list-style: none;
   margin-right: 50px;
@@ -38,20 +39,65 @@ margin-left: 15px;
 
 .menu-items li a{
   border-radius: 5px;
-  margin: 0 60px;
+  margin: 0 70px;
   text-decoration:none;
   font-size: 20px;
+  font-weight: bold;
   display: block;
   color: gray;
+
 }
 
-.menu-items li:hover, li.active {
+/* .menu-items li:hover, li.active {
   background-color: rgba(0,0,0,0.1);
+  width: 150px;
+  height: auto;
+  margin-top: 8px;
   transform: 4s;
   border-radius: 5px;
   color: blue;
+} */
+
+
+
+.contenedor1 {
+  width: 400px;
+  height: 50px;
+  background: rgb(230, 228, 228);
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 100px;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
-.buscador {
-  margin-left: 150px;
+.buscador{
+  width: 300px;
+  border:none;
+  color: #4f5b66;
+  background-color:transparent;
+  margin-top: 15px;
+  margin-left: 10px ;
+  position: absolute;
+  font-size: 18px;
+}
+
+.icon{
+  position:absolute;
+  margin-top: 16px;
+  margin-left: -15px;
+
+
+
+}
+
+.settings{
+  margin-top: 20px;
+
 }
