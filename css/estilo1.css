@@ -1,0 +1,156 @@
+*{
+  margin: 10px;
+  padding: 0px;
+}
+
+body {
+  background-color: ghostwhite;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+/*<-----slider de imagenes publicidad------->*/
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+
+.slider img{
+  width: 30%;
+}
+
+@keyframes cambio{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+.fondo {
+
+  background-color: #f7f9f9;
+
+}
+
+
+img[class="exito"]{
+  width: 250px;
+  height: 150px;
+  position:relative;
+}
+
+img{
+  width: 200px;
+  height: 300px;
+}
+
+form{
+  margin: auto;
+  width: 1500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px  #dcdcd5;
+}
+
+form div{
+  width: 300px;
+  height: 150px;
+  box-shadow: 2px 2px 10px  #dcdcd5;
+  border-radius: 25px;
+  background-color: #f8f8ff;
+}
+
+form h4 {
+  position: absolute;
+  top: 580px;
+  left: 550px;
+  font-family: 'caribri';
+  font-size: 30px;
+  font-style: normal;
+  font-weight:bolder;
+  color: #004e58;
+  
+}
+
+.linea-division{
+  width: 790px;
+  height: 3px;
+  background-color: #36221c;
+}
+
+input[id="image1"]{
+  width: 300px;
+  height: 150px;
+}
+
+h2 {
+  size: 10px;
+  font-family: 'caribri';
+  font-size: 30px;
+  font-style: normal;
+  font-weight:bolder;
+  color: #004e58;
+}
+
+/*<------botones------>*/
+
+.tuStock{
+  position: absolute;
+  top: 650px;
+  left: 800px;
+}
+
+.consultaPrecio{
+  position: absolute;
+  top: 650px;
+  left: 300px;
+}
+
+.tarjetaRegalo{
+  position: absolute;
+  top: 650px;
+  left: 1300px;
+}
+
+.planSepare{
+  position: absolute;
+  top: 850px;
+  left: 300px;
+}
+
+.tarjetaCambio{
+  position: absolute;
+  top: 850px;
+  left:1300px;
+}
+
+.tarjetaTuya{
+  position: absolute;
+  top: 850px;
+  left:800px ;
+}
