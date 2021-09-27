@@ -1,4 +1,4 @@
-## **Tú Stock** ##
+## **[Tú Stock](https://naranjojhordy.github.io/Proyecto/)** ##
 Es una nueva funcionalidad que permite al usuario saber las existencias,descripción y precio en las dependencias además de la ubicación del producto en el almacén.
 Sabemos  que nuestro cliente está atento a los productos que desea comprar. Actualmente  tenemos un gran número que gustan de ir a las dependencias. 
 
