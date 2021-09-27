@@ -21,8 +21,4 @@ function main() {
       });
     }
   });
-
-  $(".submenu-lateral").click(function () {
-    $(".sub-m").slideToggle();
-  });
 }

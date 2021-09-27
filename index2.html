@@ -1,72 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/estilo2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+     <script src="https://kit.fontawesome.com/f2bd95d995.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-          <ul class="menu-items">
-         <label class="logo"><img src="img/vippng.com-exito-png-1014565(1).png" alt="Volver" ></label>
-         <div class="Buscar">
-            <!--<label class="buscar"><img src="img/loupe.png" alt="Buscar" ></label>-->
-        </div>
-
-           <div class= box-1></div>
-            <div class="contenedor1">
-                  <form action="send" method="GET" class="contenedor2">
-                    <span class="icon"><i class="fa fa-search"></i></span>
-                    <input type="search" name="busquedaplu" class="buscador" placeholder="Busqueda articulo">
-                    
-                  </form>
-      
+        <div class="navigation">
+            <img src="img/exitonuevo.png" class="logo" width="60px" />
+            <div class="contenedor-buscar">
+              <form action="send" method="GET" class="contenedor2">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" name="busquedaplu" class="buscador" placeholder="Buscar">
+              </form>
             </div>
-           <div >
-      
-           </div>
-      
-          <li> <a href="">Tu <br>Stock</a></li>
-          <li> <a href="">Tarjetas<br> regalo</a> </li>
-          <li> <a href="">Tarjetas <br>Cambio</a> </li>
-          <li class="settings"><a href=""><i class="fas fa-cog"></i></a></li>
-            <li class="settings"><a href=""><i class="fas fa-bell"></i></a></li>
-            <li class="settings"><a href=""><i class="fas fa-search"></i></a></li>
-             </ul></nav>
-      
-      </header>
+
+            <div class="btn-menu">
+                <span class="text-btn">Tu Stock</span>
+                <img src="img/bars-solid.png" class="bars" />
+            </div>
+
+            <ul class="menu">
+                <li class="item-m"><a href="">Tu Stock</a></li>
+                <li class="item-m"><a href=""><i class="fas fa-bell"></i></a></li>
+                <li class="item-m"><a href=""><i class="fas fa-cog"></i></a></li>
+                <li class="item-m"><a href="index.html"><i class="fa fa-undo"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="lateral">
+        <ul class="menu-lateral">
+            <li class="item-m"><a href=""><i class="fas fa-bell"></i>NOTIFICACIONES</a></li>
+            <li class="item-m"><a href=""><i class="fas fa-cog"></i>CONFIGURACIÓN</a></li>
+            <li class="item-m"><a href="index.html"><i class="fa fa-undo"></i>REGRESAR</a></li>
+        </ul>
+    </div>
 
       <section>
         <div class="Titulo">
-            <h1>Los mas buscados</h1>
+            <h1>Productos más buscados</h1>
+            <br>
+            <hr>
         </div>
 
-        <div class="slider1">
-            <ul>
-                 <li><a href="index.html"><img src="img/Salsa Mayonesa.png" alt=""> </a> <br> Valor: <h3>$16.750</h3> <br> Pasillo: <h5>7</h5> </li>
-                 <li><img src="img/Pastas Doria.jpg" alt=""> <br> Valor: <h3>$3.090</h3> <br> Pasillo: <h5>5</h5></li>
-                 <li><img src="img/Papel familia.png" alt=""> <br> Valor: <h3>$17.450</h3> <br> Pasillo: <h5>15</h5></li>
-            </ul> 
-        </div>
-        
-        <div class="slider2">
-            <ul>
-                 <li><img src="img/Fabuloso.png" alt=""> <br>Valor: <h3>$6.350</h3> <br> Pasillo: <h5>15</h5> </li>
-                 <li><img src="img/Huevos Avinal.png" alt=""> <br> Valor: <h3>$12.950</h3> <br> Pasillo: <h5>3</h5> </li>
-                 <li><img src="img/leche colanta.jpg" alt=""> <br> Valor: <h3>$3.500</h3> <br> Pasillo: <h5>10</h5> </li>
-            </ul> 
-        </div>
+        <div class="container-productos">
+            <div class="productos">
+                <div class="producto">
+                     <a href="index1.html"><img src="img/salsa.png" alt=""> <br> <br> Valor: <h3>$13.400</h3> <br> Pasillo: <h5>1</h5></a>
+                 </div>
 
+                 <div class="producto">
+                     <a href=""><img src="img/doria.jpg" alt="" id="doria"> <br> <br> Valor: <h3>$3.090</h3> <br> Pasillo: <h5>5</h5></a>
+                </div>
 
-        <!--<div class="imagenesProductos">
-            <img src="img/Salsa Mayonesa.png" alt="Salsa">
-            <img src="img/Pastas Doria.jpg" alt="Pastas">
-       </div>-->
+                <div class="producto">
+                     <a href=""><img src="img/familia.jpeg" alt=""> <br> <br> Valor: <h3>$17.450</h3> <br> Pasillo: <h5>15</h5></a>
+                </div>
+            
+                <div class="producto">
+                     <a href=""><img src="img/fabuloso.png" alt=""> <br> <br>Valor: <h3>$6.350</h3> <br> Pasillo: <h5>15</h5> </a>
+                </div> 
+
+                <div class="producto">
+                     <a href=""><img src="img/huevos.png" alt=""> <br> <br> Valor: <h3>$12.950</h3> <br> Pasillo: <h5>3</h5> </a>
+                </div> 
+
+                <div class="producto">
+                     <a href=""><img src="img/colanta.jpeg" alt=""> <br> <br> Valor: <h3>$3.500</h3> <br> Pasillo: <h5>10</h5></a>
+                </div> 
+            </div>
+        </div>
 
       </section>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

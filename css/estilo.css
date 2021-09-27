@@ -27,9 +27,10 @@ img[class="imgProducto"]{
 
 li a{
   text-decoration: none;
-  color: black;
+  color: #004e58;
   font-size: 20px;
   margin-left: 20px;
+
 }
 
 a[class="mas"]{
@@ -37,6 +38,7 @@ a[class="mas"]{
 }
 
 .Titulo h1{
+  color: #004e58;
   font-size: 50px;
   margin-top: 5px;
 }
@@ -63,10 +65,12 @@ a[class="mas"]{
 
 .contenido h2{
   font-size: 50px;
+  color: #004e58;
 }
 
 .contenido h1{
   font-size: 100px;
+  color: #004e58;
 }
 
 .contenido1 {
@@ -92,12 +96,14 @@ a[class="mas"]{
 
 .etiquetas ul{
   font-size: 30px;
+  color: #004e58;
 }
 
 article h4{
   margin-top: 20px;
   font-size: 40px;
   text-align: center;
+  color: #004e58;
 }
 
 p{
@@ -106,6 +112,8 @@ p{
   padding-bottom: 40px;
   margin-left: 60px;
   margin-right: 60px;
+  color: #004e58;
+
 }
 
 
@@ -190,9 +198,6 @@ p{
     width: 100%;
 }
 
-#contacto a, #sobre-nosotros a{
-  margin: 0px;
-}
 
 .btn-menu {
   display: none;
