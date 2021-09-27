@@ -29,9 +29,10 @@
   }
 
   div[class="Titulo"] {
-  width: 70px;
-height: 70px;
-margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    background-size: 25px 50px;
 }
 
   div[class="imagenesProductos"]{
@@ -43,7 +44,7 @@ margin-left: 15px;
     left: 400px;
   }
 
-  /*<-----slider de imagenes publicidad------->*/
+  /*<-----imagenes publicidad------->*/
 
   .slider1{
     width: 60%;
@@ -55,6 +56,13 @@ margin-left: 15px;
 
   .slider1 li{
     list-style: none;
+    margin-right: 20px;
+    font-family: 'caribri';
+    font-size: 20px;
+    font-style: normal;
+    font-weight:bolder;
+    color: #000000;
+    text-align: center;
   }
   
   .slider1 ul{
@@ -81,6 +89,25 @@ margin-left: 15px;
   
   .slider2 li{
     list-style: none;
+    margin-right: 20px;
+    font-family: 'caribri';
+    font-size: 20px;
+    font-style: normal;
+    font-weight:bolder;
+    color: #000000;
+    text-align: center;
+  }
+
+  h3 {
+    display:inline; 
+    font-size: 21px;
+    color: #001652;
+  }
+
+  h5 {
+    display:inline;
+    font-size: 20px;
+    color: rgba(0, 98, 255, 1);
   }
 
   .slider2 ul{
@@ -94,19 +121,7 @@ margin-left: 15px;
     width: 230px;
     height: 230px;
   }
-  
-  
 
-  /*<-----FIN slider de imagenes publicidad------->*/
-
-  /*img[src="img/Salsa Mayonesa.png"] {
-    width: 190px;
-    height: 190px;
-  }
-  img [src="img/Pastas Doria.jpg"] {
-    width: 500px;
-    height: 190px;
-  }*/
   
   h1 {
     position: absolute;
