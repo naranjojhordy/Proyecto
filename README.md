@@ -55,6 +55,10 @@ APP Éxito.
 - Busqueda mas eficaz al no depender netamente del personal del almacén.
 - Estrategia de marketing: el cliente puede optar por llevar productos los cuales no tenía planeado comprar, debido a que nuestro sistema le muestra múltiples ítems de la misma categoría, y además da sugerencias de acuerdo al producto.
 
+## Integrantes ##
+- Jhordy Alexander Naranjo Arboleda
+- John Stiven Correa Quiroz
+- Carlos Andres Mahecha Lozada
 
 
 
