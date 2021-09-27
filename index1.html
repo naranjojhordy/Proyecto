@@ -1,61 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/estilo1.css">
-     <title>Pantalla Principal</title>
- </head>	
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f2bd95d995.js" crossorigin="anonymous"></script>
+    <!--<script src="js/main.js"></script>-->
+    <title>Tu Stock | Verificador de precios.</title>
+</head>
+<body>
 
- <img class="exito" src="img/exito.png"> <br>
 
- <body>
+<header>
+    <div class="navigation">
+        <img src="img/vippng.com-exito-png-1014565.png" class="logo" width="60px" />
+        <div class="contenedor-buscar">
+          <form action="send" method="GET" class="contenedor2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" name="busquedaplu" class="buscador" placeholder="Buscar">
+          </form>
+        </div>
+
+        <div class="btn-menu">
+            <span class="text-btn">Tu Stock</span>
+            <img src="img/bars-solid.png" class="bars" />
+        </div>
+
+        <ul class="menu">
+            <li class="item-m"><a href="">Tu Stock</a></li>
+            <li class="item-m"><a href=""><i class="fas fa-bell"></i></a></li>
+            <li class="item-m"><a href=""><i class="fas fa-cog"></i></a></li>
+            <li class="item-m"><a href="index.html"><i class="fa fa-undo"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="lateral">
+    <ul class="menu-lateral">
+        <li class="item-m"><a href=""><i class="fas fa-bell"></i>NOTIFICACIONES</a></li>
+        <li class="item-m"><a href=""><i class="fas fa-cog"></i>CONFIGURACIÓN</a></li>
+        <li class="item-m"><a href="index.html"><i class="fa fa-undo"></i>REGRESAR</a></li>
+    </ul>
+</div>
+
+<div class="contenido1">
+
+    <div class="Titulo">
+      <h1>Mayonesa Fruco</h1>
+          <div class="imagenProducto">
+              <img class="imgProducto" src="img/salsa.png" alt="Salsa"><br>
+              <div class="linea-division"></div><br>
+        </div>
+    </div>
 
 
-  <div class="slider">
-          <ul>
-               <li><img src="img/1.png" alt=""></li>
-               <li><img src="img/2.png" alt=""></li>
-               <li><img src="img/3.jpg" alt=""></li>
-               <li><img src="img/4.png" alt=""></li>
-          </ul> 
- </div>
 
-<form class="botones">
-     
-     <h4>Selecciona tu opcion <div class="linea-division"></div></h4>
+    <aside class="contenido">
+        <div class="unidades">
+            <h2>Valor</h2><br>
+            <h1>$13.400</h1><br> <br>
+            <h3>Unidades disponibles:</h3>
+            <h3>24</h3> <br>
+            <div class="linea-division-pequeña"></div><br>
+            <h3>Pasillo: 1</h3>
+        </div>
+</div>  
 
- 	<div class="tuStock">
-          <input type="image" name="ingresar" id="image1" src="img/tustock.png"> 
-     </div>
+    <div class="etiquetas">
+        <ul>Etiquetas
+             <li><a href="" class="mas">+</a></li>
+             <li><a href="">Salsas</a></li>
+             <li><a href="">Cocina</a></li>
+             <li><a href="">Grasas</a></li>
+        </ul>
+    </div>
+</aside>
 
-     <div class="consultaPrecio">
-          <h2>Consulta Precio</h2>
-          
-     </div>        
 
-     <div class="tarjetaRegalo">
-          <h2>Tarjeta Regalo</h2>
-          
-     </div>   
+<section>
+  <article>
+    <h4>Descripción</h4><br><br>
+    <p>
+     Salsa básica cremosa emulsionada en frío, a base de aceite
+     vegetal, yemas de huevo, jugo de limón y condimentos. Con un
+     color ligeramente amarillo. 
+    </p>
+  </article>
+</section>
 
-     <div class="planSepare">
-          <h2>Plan Separe</h2>
-          
-     </div>  
 
-     <div class="tarjetaCambio">
-          <h2>Tarjeta Cambio</h2>
-         
-     </div>  
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/main.js"></script>
 
-     <div class="tarjetaTuya">
-          <h2>Tarjeta Tuya</h2>
-         
-     </div> 
-
- </form> 
-
- </body>	
-</html> 	
+</body>
+</html>
