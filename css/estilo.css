@@ -152,6 +152,17 @@ p{
   border-radius: 5px;
 }
 
+select {
+  width:370px;
+	padding:11px;
+  background-color: rgb(230, 228, 228);
+  border: none;
+  appearance: none;
+  font-size: 17pt;
+  color: #63717f;
+  font-weight: bold;
+}
+
 .buscador{
   width: 300px;
   border:none;
