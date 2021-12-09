@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f2bd95d995.js" crossorigin="anonymous"></script>
+    <!--<script src="js/main.js"></script>-->
+    <title>Tu Stock | Verificador de precios.</title>
+</head>
+<body>
+
+
+<header>
+    <div class="navigation">
+        <img src="img/exitonuevo.png" class="logo" width="60px" />
+        <div class="contenedor-buscar">
+          <form action="send" method="GET" class="contenedor2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <!-- <input type="search" name="busquedaplu" class="buscador" placeholder="Buscar"> -->
+            <select name='opciones' onchange="location = this.value;"> 
+                <option value="index2.html">Buscar...</option>
+                <option value="Leche.html">Leche Colanta</option>
+                <option value="Fabuloso.html">Fabuloso</option>
+                <option value="Papel.html">Papel higiénico</option>
+                <option value="Salsa.html">Salsa Mayonesa</option>
+                <option value="Pastas.html">Macarrones Doria</option>
+              </select>	
+          </form>
+        </div>
+
+        <div class="btn-menu">
+            <span class="text-btn">Tu Stock</span>
+            <img src="img/bars-solid.png" class="bars" />
+        </div>
+
+        <ul class="menu">
+            <li class="item-m"><a href="">Tu Stock</a></li>
+            <li class="item-m"><a href=""><i class="fas fa-bell"></i></a></li>
+            <li class="item-m"><a href=""><i class="fas fa-cog"></i></a></li>
+            <li class="item-m"><a href="MenuProductos.html"><i class="fa fa-undo"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="lateral">
+    <ul class="menu-lateral">
+        <li class="item-m"><a href=""><i class="fas fa-bell"></i>NOTIFICACIONES</a></li>
+        <li class="item-m"><a href=""><i class="fas fa-cog"></i>CONFIGURACIÓN</a></li>
+        <li class="item-m"><a href="index.html"><i class="fa fa-undo"></i>REGRESAR</a></li>
+    </ul>
+</div>
+
+<div class="contenido1">
+
+    <div class="Titulo">
+      <h1>Pastas Doria Macarron</h1>
+          <div class="imagenProducto">
+              <img class="imgProducto" src="img/doria.jpg" alt="Pastas Doria"><br>
+              <div class="linea-division"></div><br>
+        </div>
+    </div>
+
+
+
+    <aside class="contenido">
+        <div class="unidades">
+            <h2>Valor</h2><br>
+            <h1>$3.090</h1><br> <br>
+            <h3>Unidades disponibles:</h3>
+            <h3>41</h3> <br>
+            <div class="linea-division-pequeña"></div><br>
+            <h3>Pasillo: 5</h3>
+        </div>
+</div>  
+
+    <div class="etiquetas">
+        <ul>Etiquetas
+             <li><a href="" class="mas">+</a></li>
+             <li><a href="">Pastas</a></li>
+             <li><a href="">Cocina</a></li>
+             <li><a href="">Espaghetti</a></li>
+        </ul>
+    </div>
+</aside>
+
+
+<section>
+  <article>
+    <h4>Descripción</h4><br><br>
+    <p>
+        El Spaghetti es una pasta larga con múltiples y fáciles formas de preparación; perfecta para acompañar con salsas, carnes y verduras.
+    </p>
+  </article>
+</section>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
