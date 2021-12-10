@@ -1,0 +1,28 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Es una nueva funcionalidad que permite al usuario saber las existencias,descripción y precio en las dependencias además de la ubicación del producto en el almacén.\r Sabemos  que nuestro cliente está atento a los productos que desea comprar. Actualmente  tenemos un gran número que gustan de ir a las dependencias.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "/nodemon/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naranjojhordy/Proyecto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naranjojhordy/Proyecto/issues"
+  },
+  "homepage": "https://github.com/naranjojhordy/Proyecto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "expresss": "0.0.0",
+    "mongoose": "^6.1.1",
+    "morgan": "^1.10.0",
+    "nodemon": "2.0.15"
+  }
+}
