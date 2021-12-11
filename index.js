@@ -3,9 +3,12 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const path = require("path");
+const morgan  = require("morgan")
 
 app.set("view engine" , "ejs");
 
+//MIddlewares
+app.use(morgan("combined"));
 app.use(`/css` , express.static('css'));
 app.use(`/img` , express.static('img'));
 app.use(`/js` , express.static('js'));
