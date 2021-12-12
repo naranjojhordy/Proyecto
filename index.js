@@ -67,7 +67,7 @@ const Productos  = mgdb.model("productos" ,{
 });
 
 
-//Registro 
+//Registro respuesta 
 app.post("/add" , (req,res) =>{
     new Productos (req.body).save().then(() =>{
     res.send(`<h1>Registro Exitoso, Producto en base de datos<h1/>
@@ -75,6 +75,7 @@ app.post("/add" , (req,res) =>{
 });
 
 });
+//formulario de registro productos
 app.get(`/registro` , (req,res) =>{
 let registro = `
 <!DOCTYPE html>
@@ -136,7 +137,7 @@ res.send(registro);
 });
 
 
-
+//peticiones basicas de rutas
 
 app.get(`/inicio` , (req,res) =>{
     res.render("index.ejs")
@@ -172,4 +173,22 @@ app.get('/Pastas' , (req,res) =>{
     res.render('Pastas.ejs')
 })
 
-
+//listar los productos
+app.get('/MenuProductos' , (req,res) =>{
+    Productos.find((err,doc) =>{
+    let html = ""
+        for(var i in doc){
+            let Productos = doc[i];
+       //console.log(doc[0]);
+ 
+ html += `    <span>${Productos.nombre}</span><br>
+               <span>${Productos.valor}</span><br>
+               <span>${Productos.und}</span><br>
+               <span>${Productos.pasillo}</span><br> 
+               <span>${Productos.categoria}</span><br>
+               <span>${Productos.description}</span><br>
+               <span>${Productos.cover}</span><br>`
+        } 
+res.send(html)
+    });
+});
