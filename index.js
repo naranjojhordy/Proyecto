@@ -71,7 +71,7 @@ const Productos  = mgdb.model("productos" ,{
 app.post("/add" , (req,res) =>{
     new Productos (req.body).save().then(() =>{
     res.send(`<h1>Registro Exitoso, Producto en base de datos<h1/>
-    <a href="/registro"><input type="button" value="Volver">/a>>  `);
+    <a href="/registro"><input type="button" value="Volver"></a>`);
 });
 
 });
@@ -174,7 +174,7 @@ app.get('/Pastas' , (req,res) =>{
 })
 
 //listar los productos
-app.get('/MenuProductos' , (req,res) =>{
+app.get('/listar' , (req,res) =>{
     Productos.find((err,doc) =>{
     let html = ""
         for(var i in doc){
@@ -187,8 +187,27 @@ app.get('/MenuProductos' , (req,res) =>{
                <span>${Productos.pasillo}</span><br> 
                <span>${Productos.categoria}</span><br>
                <span>${Productos.description}</span><br>
-               <span>${Productos.cover}</span><br>`
+               <span>${Productos.cover}</span><br> `
+
+               html+= `
+              <br> 
+              <a href="/Borrar?id=${Productos._id}">Borrar<a/>`
         } 
 res.send(html)
     });
 });
+
+
+app.get(`/borrar` , (req,res) =>{
+       //res.send(req.query.id);
+       Productos.deleteOne({_id:req.query.id}, (error) =>{
+           if(error){
+               res.send("Error al dar de baja el producto")
+           }else{
+               res.send("Producto dado de baja <a href =/listar>Volver</a>")
+           }
+       })
+           
+});
+
+
