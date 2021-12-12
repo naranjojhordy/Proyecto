@@ -139,7 +139,7 @@ res.send(registro);
 
 //peticiones basicas de rutas
 
-app.get(`/inicio` , (req,res) =>{
+app.get(`/` , (req,res) =>{
     res.render("index.ejs")
 })
 
@@ -204,7 +204,7 @@ app.get(`/borrar` , (req,res) =>{
            if(error){
                res.send("Error al dar de baja el producto")
            }else{
-               res.send("Producto dado de baja <a href =/listar>Volver</a>")
+               res.send("Producto dado de baja con exito y<a href =/listar>Volver</a>")
            }
        })
            
