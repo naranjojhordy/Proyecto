@@ -6,6 +6,7 @@ const path = require("path");
 const morgan  = require("morgan")
 const mgdb = require("mongoose");
 const { spawn } = require("child_process");
+const ejs = require('ejs');
 
 
 app.set("view engine" , "ejs");
@@ -170,71 +171,5 @@ app.get('/Salsa' , (req,res) =>{
 app.get('/Pastas' , (req,res) =>{
     res.render('Pastas.ejs')
 })
-
-
-app.get( `/hola` ,(req,res) =>{
-    Productos.find((err,doc) =>{
-    let html =""
-    let Productos = ""  
-    
-    for(var i in doc[1]){
-        
-    html+=` <div class="contenido1">
-
-    <div class="Titulo">
-        <h1>Papel Familia megarrollo</h1>
-        <div class="imagenProducto">
-            <img class="imgProducto" src="img/familia.jpeg" alt="Papel higienico Familia"><br>
-            <div class="linea-division"></div><br>
-        </div>
-    </div>
-
-
-
-    <aside class="contenido">
-        <div class="unidades">
-            <h2>Valor</h2><br>
-            <h1>$17.450</h1><br> <br>
-            <h3>Unidades disponibles:</h3>
-            <h3>33</h3> <br>
-            <div class="linea-division-pequeña"></div><br>
-            <h3>Pasillo: 15</h3>
-        </div>
-</div>
-
-<div class="etiquetas">
-    <ul>Etiquetas
-        <li><a href="" class="mas">+</a></li>
-        <li><a href="">Jabon</a></li>
-        <li><a href="">Aseo Personal</a></li>
-        <li><a href="">Pañitos humedos</a></li>
-    </ul>
-</div>
-</aside>
-
-
-<section>
-    <article>
-        <h4>Descripción</h4><br><br>
-        <p>
-            Es un rollo de papel higiénico, elaborado con 100% fibras de celulosa de origen natural. Rollo de papel
-            higiénico, de dos capas, absorbente con grabado en forma de círculos, con perforaciones para permitir un
-            fácil desprendimiento de las hojas, posee resistencias mecánicas apropiadas para su uso.
-        </p>
-    </article>
-</section>
-
-
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/main.js"></script>
-    `
-    }
-
-    res.send(html);
-    });
-
-
-
-});
 
 
