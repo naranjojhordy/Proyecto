@@ -71,8 +71,8 @@ body {
 }
 
 .slider img{
-  width: 70%;
-  height: 500px;
+  width: 35%;
+  height:250px;
 }
 
 @keyframes cambio{

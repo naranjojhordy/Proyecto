@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2bd95d995.js" crossorigin="anonymous"></script>
+    <!--<script src="js/main.js"></script>-->
+    <title>Tu Stock | Verificador de precios.</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="navigation">
+            <img src="img/exitonuevo.png" class="logo" width="60px" />
+            <div class="contenedor-buscar">
+                <form action="send" method="GET" class="contenedor2">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <!-- <input type="search" name="busquedaplu" class="buscador" placeholder="Buscar"> -->
+                    <select name='opciones' onchange="location = this.value;"> 
+                        <option value="index2">Buscar...</option>
+                        <option value="Leche">Leche Colanta</option>
+                        <option value="Fabuloso">Fabuloso</option>
+                        <option value="Papel">Papel higiénico</option>
+                        <option value="Salsa">Salsa Mayonesa</option>
+                        <option value="Pastas">Macarrones Doria</option>
+                      </select>	
+                </form>
+            </div>
+
+            <div class="btn-menu">
+                <span class="text-btn">Tu Stock</span>
+                <img src="img/bars-solid.png" class="bars" />
+            </div>
+
+            <ul class="menu">
+                <li class="item-m"><a href="/">Inicio</a></li>
+                <li class="item-m"><a href=""><i class="fas fa-bell"></i></a></li>
+                <li class="item-m"><a href=""><i class="fas fa-cog"></i></a></li>
+                <li class="item-m"><a href="MenuProductos"><i class="fa fa-undo"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="lateral">
+        <ul class="menu-lateral">
+            <li class="item-m"><a href=""><i class="fas fa-bell"></i>NOTIFICACIONES</a></li>
+            <li class="item-m"><a href=""><i class="fas fa-cog"></i>CONFIGURACIÓN</a></li>
+            <li class="item-m"><a href="inicio"><i class="fa fa-undo"></i>REGRESAR</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido1">
+
+        <div class="Titulo">
+            <h1>Papel Familia megarrollo</h1>
+            <div class="imagenProducto">
+                <img class="imgProducto" src="img/familia.jpeg" alt="Papel higienico Familia"><br>
+                <div class="linea-division"></div><br>
+            </div>
+        </div>
+
+
+
+        <aside class="contenido">
+            <div class="unidades">
+                <h2>Valor</h2><br>
+                <h1>$17.450</h1><br> <br>
+                <i class="fas fa-sitemap"></i> &nbsp; <h3>Unidades disponibles: <h4>33</h4></h3>  
+                <br>             
+                <div class="linea-division-pequeña"></div><br>
+                <i class="fas fa-road"></i> &nbsp; <h3>Pasillo: <h>15</h></h3>
+            </div>
+    </div>
+
+    <div class="etiquetas">
+        <ul>Etiquetas
+             <li><a href="" class="mas">+</a></li>
+             <li><a href="" class="Salsas">Salsas</a></li>
+             <li><a href="" class="Cocina">Cocina</a></li>
+             <li><a href="" class="Grasas">Grasas</a></li>
+        </ul>
+    </div>
+</aside><br>
+
+    <section>
+        <article>
+            <h4>Descripción</h4><br>
+            <div class="linea-division-des"></div><br>
+            <p>
+                Es un rollo de papel higiénico, elaborado con 100% fibras de celulosa de origen natural. Rollo de papel
+                higiénico, de dos capas, absorbente con grabado en forma de círculos, con perforaciones para permitir un
+                fácil desprendimiento de las hojas, posee resistencias mecánicas apropiadas para su uso.
+            </p>
+        </article>
+    </section>
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
